@@ -25,6 +25,7 @@
             <li><a href="ungvien.html"> Tìm việc làm </a></li>
             <li><a href="feedback.html"> Feedback</a></li>
             <li><a href="#">Mẫu CV </a></li>
+            <li><a href="tainang.html">Tìm kiếm tài năng việc làm </a></li>
         </ul>
         
         <button class="myButton" onclick="location.href='dangky.html'"><span>Đăng xuất </span></button>
@@ -42,14 +43,6 @@
       </main>
       <!--Nội dung-->
       <h1>Giới thiệu tính năng</h1>
-      <div class="container">
-        <div class="left">
-          <img class="image" src="AI2.png" alt="Image">
-          <div class="text">
-            <h2 align= "left"> <b> <a herf ="#">Hướng dẫn đăng bài tuyển dụng AI</b> </a></h2>
-            <p align = "left">Cẩm nang việc làm TechFuture - 3/7/2024</p>
-          </div>
-        </div>
         <div class="right">
           <img class="image" src="AI.png" alt="Image">
           <div class="text">
@@ -58,7 +51,7 @@
           </div>
         </div>
       </div>
-     
+   
       <!--Footer-->
       <footer>
         <div class="footer-container">
@@ -92,5 +85,16 @@
         </body>
       </html>
       
+      <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/0.1.0-beta.5/libs/oversea/index.js"></script>
+      <script>
+          new CozeWebSDK.WebChatClient({
+            config: {
+              bot_id: '7396069906342887441',
+            },
+            componentProps: {
+              title: 'Coze',
+            },
+          });
+      </script>
   </body>
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>TECHFUTURE - CÔNG NGHỆ TÌM KIẾM VIỆC LÀM </title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="sheet.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECHFUTURE - CÔNG NGHỆ TÌM KIẾM VIỆC LÀM </title>
+</head>
+<body> 
+  <!--Nội dung-->
+	<div class="container">
+		<form method="post" action="https://script.google.com/macros/s/AKfycbzglEgV1s5dwqmFF656goCYTp_lwC7OURE5olcRwrVjlQvNSU7KHmxXxbBZhADL3DB3/exec">
+			<h4>FORM ĐIỀN ĐÁP ÁN  </h4>
+			<input type="number" name="made" placeholder="Điền mã đề ">
+            <input type="text" name="câu1" placeholder="Đáp án câu 1  ">
+            <input type="text" name="câu2" placeholder="Đáp án câu 2  ">
+            <input type="text" name="câu3" placeholder="Đáp án câu 3  ">
+            <input type="text" name="câu4" placeholder="Đáp án câu 4  ">
+            <input type="text" name="câu5" placeholder="Đáp án câu 5  ">
+            <input type="text" name="câu5" placeholder="Đáp án câu 6  ">
+            <input type="text" name="câu5" placeholder="Đáp án câu 7 ">
+            <input type="text" name="câu5" placeholder="Đáp án câu 8  ">
+            <input type="text" name="câu5" placeholder="Đáp án câu 9  ">
+            <input type="text" name="câu5" placeholder="Đáp án câu 10 ">
+            <input type="text" name="hovaten" placeholder="Họ và tên ">
+            <input type="email" name="lienhe" placeholder="Liên hệ ">
+			<input type="submit" value="Submit" id="submit">
+      <a href ="Home.html"> <i class="fa-solid fa-house"></i></a> 
+		</form>
+	</div>
+	<script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzglEgV1s5dwqmFF656goCYTp_lwC7OURE5olcRwrVjlQvNSU7KHmxXxbBZhADL3DB3/exec'
+const form = document.forms['contact-form']
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! your form is submitted successfully." ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
+    </script>
+</body>
+</html>
